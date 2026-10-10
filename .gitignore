@@ -8,6 +8,7 @@ __pycache__/
 
 # Virtual environment
 .venv/
+.venv-1/
 venv/
 env/
 ENV/
@@ -55,7 +56,7 @@ data/interim/*
 
 
 # Generated model artifacts
-models/
+
 
 # Logs
 logs/

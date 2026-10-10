@@ -1,0 +1,12 @@
+[
+    "value",
+    "meter_delta",
+    "previous_value",
+    "rolling_mean",
+    "rolling_std",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week_sin",
+    "day_of_week_cos",
+    "is_weekend"
+]
