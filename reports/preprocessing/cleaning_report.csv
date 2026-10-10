@@ -1,0 +1,9 @@
+metric,value
+original_rows,652315
+final_rows,652175
+invalid_timestamps_removed,0
+exact_duplicates_removed,140
+rows_removed_total,140
+sensor_timestamp_duplicate_rows,1126
+sensor_timestamp_conflict_rows,888
+aggregated_value_decrease_rows,4
