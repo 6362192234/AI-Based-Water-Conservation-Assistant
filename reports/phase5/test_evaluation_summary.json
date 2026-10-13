@@ -1,0 +1,80 @@
+{
+    "timestamp_utc": "2026-10-13T08:57:36.072089+00:00",
+    "test_dataset_path": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\data\\processed\\features\\test.parquet",
+    "total_records": 82572,
+    "models": {
+        "isolation_forest": {
+            "model_name": "Isolation Forest Baseline",
+            "model_artifact": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\models\\isolation_forest_baseline.joblib",
+            "features_artifact": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\models\\isolation_forest_features.json",
+            "features_used": [
+                "value",
+                "meter_delta",
+                "previous_value",
+                "rolling_mean",
+                "rolling_std",
+                "hour_sin",
+                "hour_cos",
+                "day_of_week_sin",
+                "day_of_week_cos",
+                "is_weekend"
+            ],
+            "evaluated_records": 82572,
+            "anomaly_count": 658,
+            "anomaly_rate": 0.007969,
+            "anomaly_percentage": 0.7969,
+            "score_metric": "decision_function (lower is more anomalous)",
+            "score_statistics": {
+                "min": -0.0883686344985446,
+                "max": 0.2937858585376211,
+                "mean": 0.22674894129047946,
+                "median": 0.24765213692321555,
+                "std": 0.05903337970461496
+            }
+        },
+        "autoencoder": {
+            "model_name": "Deep Autoencoder Baseline",
+            "model_artifact": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\models\\water_autoencoder.keras",
+            "preprocessing_artifact": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\models\\autoencoder_preprocessing.joblib",
+            "features_artifact": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\models\\autoencoder_features.json",
+            "threshold_artifact": "C:\\Users\\sahas\\AI-Based-Water-Conservation-Assistant\\models\\autoencoder_threshold.json",
+            "features_used": [
+                "value",
+                "meter_delta",
+                "previous_value",
+                "rolling_mean",
+                "rolling_std",
+                "hour_sin",
+                "hour_cos",
+                "day_of_week_sin",
+                "day_of_week_cos",
+                "is_weekend"
+            ],
+            "threshold": 1.8137104511260986,
+            "threshold_method": "99th percentile of training reconstruction errors",
+            "evaluated_records": 82572,
+            "anomaly_count": 2299,
+            "anomaly_rate": 0.027842,
+            "anomaly_percentage": 2.7842,
+            "score_metric": "Mean Squared Reconstruction Error",
+            "score_statistics": {
+                "min": 0.00215572165325284,
+                "max": 101.200927734375,
+                "mean": 0.40140512585639954,
+                "median": 0.10648472607135773,
+                "std": 2.594621181488037
+            }
+        }
+    },
+    "consensus": {
+        "both_flagged_count": 169,
+        "both_flagged_rate": 0.002047,
+        "both_flagged_percentage": 0.2047,
+        "isolation_forest_only_count": 489,
+        "isolation_forest_only_percentage": 0.5922,
+        "autoencoder_only_count": 2130,
+        "autoencoder_only_percentage": 2.5796,
+        "neither_flagged_count": 79784,
+        "neither_flagged_percentage": 96.6236
+    }
+}
