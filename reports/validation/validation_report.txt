@@ -1,0 +1,10 @@
+DATA VALIDATION REPORT
+============================================================
+Rows: 652175
+Columns: 19
+Missing cells: 0
+Duplicate rows: 0
+Minimum value: 0.001
+Maximum value: 0.3
+
+Validation status: PASSED

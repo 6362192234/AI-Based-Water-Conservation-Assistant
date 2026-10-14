@@ -1,0 +1,4 @@
+{
+    "threshold": 1.8137104511260986,
+    "method": "99th percentile of training reconstruction errors"
+}

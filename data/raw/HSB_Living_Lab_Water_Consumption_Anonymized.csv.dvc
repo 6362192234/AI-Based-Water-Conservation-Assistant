@@ -1,0 +1,5 @@
+outs:
+- md5: c07aa828976f52f61f323a820f0828fd
+  size: 85140852
+  hash: md5
+  path: HSB_Living_Lab_Water_Consumption_Anonymized.csv

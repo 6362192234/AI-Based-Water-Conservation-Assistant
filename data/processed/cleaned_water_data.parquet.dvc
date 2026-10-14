@@ -1,0 +1,5 @@
+outs:
+- md5: 93afd770d5d9e90dc3649f1fc3067f00
+  size: 7345631
+  hash: md5
+  path: cleaned_water_data.parquet
